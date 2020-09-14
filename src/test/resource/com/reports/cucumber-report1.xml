@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="38.47">
+    <testcase classname="Verify user is able to search products" name="Verify user should see the amazon text and search" time="23.884">
+        <failure message="expected:&lt;mobile[]&gt; but was:&lt;mobile[s]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given User login the application............................................passed
+When User should enter Keyword "mobiles" in the search box..................passed
+Then User should click on search button.....................................passed
+Then User should see "mobile" in the result.................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<mobile[]> but was:<mobile[s]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.amazon.stepdefinition.AmazonDefinition.user_should_see_in_the_result(AmazonDefinition.java:42)
+	at ✽.User should see "mobile" in the result(file:///D:/Demo%20Workspace/seleniumproject/CcucumberProject/src/test/java/com/amazon/features/Amazon.feature:10)
+]]></failure>
+    </testcase>
+    <testcase classname="Verify user is able to search products" name="Verify user should see the amazon text and search 2" time="12.939">
+        <failure message="expected:&lt;[mobile]&gt; but was:&lt;[laptops]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given User login the application............................................passed
+When User should enter Keyword "laptops" in the search box..................passed
+Then User should click on search button.....................................passed
+Then User should see "mobile" in the result.................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[mobile]> but was:<[laptops]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at com.amazon.stepdefinition.AmazonDefinition.user_should_see_in_the_result(AmazonDefinition.java:42)
+	at ✽.User should see "mobile" in the result(file:///D:/Demo%20Workspace/seleniumproject/CcucumberProject/src/test/java/com/amazon/features/Amazon.feature:10)
+]]></failure>
+    </testcase>
+</testsuite>
+
